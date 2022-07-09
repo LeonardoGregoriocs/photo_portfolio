@@ -47,16 +47,3 @@ git commit —fixup <numero_do_hash> → Corrige um commit anterior.
 
 - Quando temos conflitos, vemos as palavras HEAD (que seria aquilo que temos no nosso repositório local), e ai temos um hash do commit, que é aquilo que veio do repositório remoto e deu algum conflito com aquilo que fizemos.
     - No exemplo do curso, fizemos alterações local no código e depois fizemos no Git Hub (simulando como se outra pessoa tivesse atuado no projeto). Logo após, ao tentarmos dar um “git pull origin master” no nosso código, gerou dois conflitos. Após resolver, damos o comando git add nome_do_arquivo e depois utilizamos o comando “git merge —continue”, onde aparece as informações da correção e o nome do commit, logo após fecharmos, podemos dar um push para o repositório normalmente.
-<<<<<<< HEAD
-=======
-
-        <<<<<< HEAD
-
-        // MUDANÇAS LOCAIS
-
-        ======
-
-        // MUDANÇAS QUE ESTÃO VINDO DO REPOSITÓRIO REMOTO
-
-        >>>>> HASH
->>>>>>> 8f77dc47285b84bfd554e9a9d38cf36b7ffc96a0
