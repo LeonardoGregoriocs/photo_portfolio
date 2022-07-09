@@ -51,3 +51,9 @@ git commit —fixup <numero_do_hash> → Corrige um commit anterior.
 A primeira coisa a ser entendidade sobre o git rebase é que resolve o mesmo problema que o git merge. Ambos são utilizados para integrar, mesclar, misturar alterações para outras, porém, fazem isso de formas diferentes.
 
 git config —global help.autocorrect 1 → Comando nos auxilia na correção de quando escrevemos pequenos erros ortográfico no comando. O git informa que o comando está errado, informa o comando correto.. porém continua, automaticamente, ele corrige e realiza o comando.
+
+git archive → Cria um zip de todo o repositório.
+    Nessa comando, podemos passar algumas informações:
+        git archive <nome_da_branch>
+        git archive <nome_da_branch> --format=zip -> Ou seja, o formato do arquivo que queremos.
+        git archive <nome_da_branch> --format=zip --output=master.zip -> Podemos passar o output, para dar o nome do arquivo.
