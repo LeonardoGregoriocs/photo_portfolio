@@ -55,5 +55,30 @@ git config —global help.autocorrect 1 → Comando nos auxilia na correção de
 git archive → Cria um zip de todo o repositório.
     Nessa comando, podemos passar algumas informações:
         git archive <nome_da_branch>
+
         git archive <nome_da_branch> --format=zip -> Ou seja, o formato do arquivo que queremos.
+
         git archive <nome_da_branch> --format=zip --output=master.zip -> Podemos passar o output, para dar o nome do arquivo.
+
+git log personalizados:
+    git log --pretty=oneline -> Os logs são mostrado em apenas uma linha, traz o hash e a mensagem do commit.
+
+    git log --pretty=oneline --graph -> Retorna as informações acima e mais o grafico.
+
+    git log --pretty=oneline --graph --all -> Retorn as informações de todas as branch, stages, basicamente tudo.
+
+    -> Filtros dentro do log:
+
+    git log --since='Jan 1 2018' -> Podemos filtrar os log através de datas, ou seja, passamos uma data, e ele retorna a partir daquela data informada.
+
+    git log --until='Jan 1 2018' -> Podemos filtrar também até aquele dia que passamos, ou seja, tudo que tem antes, e tudo que tem depois é ignorado.
+
+    git log --since='Jan 1 2018' --until='Jan 10 2018' -> Podemos usar esse comando quando queremos um periodo, e ai passamos os dois filtros que temos acima.
+
+    git log --author="Leonardo" -> Podemos filtrar pelo nome do autor.
+
+    git shortlog -> Retorna um log simplificado.
+
+    git shortlog -sn -> Retorna um log mais simples ainda, retorna somente o numero de commite e o autor.
+
+    git log -<numero_de_commit> -> Retorna os ultimos commites, de acordo com o valor que passarmos em <numero_de_commit>
