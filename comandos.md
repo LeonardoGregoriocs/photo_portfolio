@@ -37,9 +37,9 @@ git show <hash_do_commit> → Permite visualizarmos quais mudanças foram feitas
         - s → dividir em partes menores ainda.
         - e → definir manualmente.
 
-git rebase -i HEAD~<numero_que_deseja_voltar> → Este comando é utilizado para quando temos dois commit, mas queremos juntar os dois, ou seja, ter apenas um commite.  O -i abre o terminal e permite termos um terminal interativo. E a segunda opção, passamos quantos commites desejamos voltar.
+- git rebase -i HEAD~<numero_que_deseja_voltar> → Este comando é utilizado para quando temos dois commit, mas queremos juntar os dois, ou seja, ter apenas um commite.  O -i abre o terminal e permite termos um terminal interativo. E a segunda opção, passamos quantos commites desejamos voltar.
 
-git commit —fixup <numero_do_hash> → Corrige um commit anterior.
+- git commit —fixup <numero_do_hash> → Corrige um commit anterior.
     - Exemplo:
         - Criamos um commit, logo após queremos corrigir algo ou adicionar mais commit, usamos o fixup, vamos supor, que usamos duas vezes e agora queremos unir tudo em um único commit, usamos:
             1. git log, e voltamos até um commit anterior daquele em que queremos juntos, pegamos a hash do commit.
@@ -50,9 +50,9 @@ git commit —fixup <numero_do_hash> → Corrige um commit anterior.
 
 A primeira coisa a ser entendidade sobre o git rebase é que resolve o mesmo problema que o git merge. Ambos são utilizados para integrar, mesclar, misturar alterações para outras, porém, fazem isso de formas diferentes.
 
-git config —global help.autocorrect 1 → Comando nos auxilia na correção de quando escrevemos pequenos erros ortográfico no comando. O git informa que o comando está errado, informa o comando correto.. porém continua, automaticamente, ele corrige e realiza o comando.
+- git config —global help.autocorrect 1 → Comando nos auxilia na correção de quando escrevemos pequenos erros ortográfico no comando. O git informa que o comando está errado, informa o comando correto.. porém continua, automaticamente, ele corrige e realiza o comando.
 
-git archive → Cria um zip de todo o repositório.
+- git archive → Cria um zip de todo o repositório.
     Nessa comando, podemos passar algumas informações:
         git archive <nome_da_branch>
 
@@ -60,7 +60,7 @@ git archive → Cria um zip de todo o repositório.
 
         git archive <nome_da_branch> --format=zip --output=master.zip -> Podemos passar o output, para dar o nome do arquivo.
 
-git log personalizados:
+- git log personalizados:
     git log --pretty=oneline -> Os logs são mostrado em apenas uma linha, traz o hash e a mensagem do commit.
 
     git log --pretty=oneline --graph -> Retorna as informações acima e mais o grafico.
