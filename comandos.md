@@ -49,3 +49,5 @@ git commit —fixup <numero_do_hash> → Corrige um commit anterior.
     - No exemplo do curso, fizemos alterações local no código e depois fizemos no Git Hub (simulando como se outra pessoa tivesse atuado no projeto). Logo após, ao tentarmos dar um “git pull origin master” no nosso código, gerou dois conflitos. Após resolver, damos o comando git add nome_do_arquivo e depois utilizamos o comando “git merge —continue”, onde aparece as informações da correção e o nome do commit, logo após fecharmos, podemos dar um push para o repositório normalmente.
 
 A primeira coisa a ser entendidade sobre o git rebase é que resolve o mesmo problema que o git merge. Ambos são utilizados para integrar, mesclar, misturar alterações para outras, porém, fazem isso de formas diferentes.
+
+git config —global help.autocorrect 1 → Comando nos auxilia na correção de quando escrevemos pequenos erros ortográfico no comando. O git informa que o comando está errado, informa o comando correto.. porém continua, automaticamente, ele corrige e realiza o comando.
