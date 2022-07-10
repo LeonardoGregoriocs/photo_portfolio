@@ -4,32 +4,32 @@
 
 ### GIT LOG -> Visualizar os logs dos commites realizados
 
-* git log → Esse comando nos o histórico dos commit que foram realizados.
+    * git log → Esse comando nos o histórico dos commit que foram realizados.
 
-* git log personalizados:
-    1. git log --pretty=oneline -> Os logs são mostrado em apenas uma linha, traz o hash e a mensagem do commit.
+    * git log personalizados:
+        1. git log --pretty=oneline -> Os logs são mostrado em apenas uma linha, traz o hash e a mensagem do commit.
 
-    2. git log --pretty=oneline --graph -> Retorna as informações acima e mais o grafico.
+        2. git log --pretty=oneline --graph -> Retorna as informações acima e mais o grafico.
 
-    3. git log --pretty=oneline --graph --all -> Retorn as informações de todas as branch, stages, basicamente tudo.
+        3. git log --pretty=oneline --graph --all -> Retorn as informações de todas as branch, stages, basicamente tudo.
 
-    #### Filtros dentro do log:
+        #### Filtros dentro do log:
 
-    1. git log --since='Jan 1 2018' -> Podemos filtrar os log através de datas, ou seja, passamos uma data, e ele retorna a partir daquela data informada.
+        1. git log --since='Jan 1 2018' -> Podemos filtrar os log através de datas, ou seja, passamos uma data, e ele retorna a partir daquela data informada.
 
-    2. git log --until='Jan 1 2018' -> Podemos filtrar também até aquele dia que passamos, ou seja, tudo que tem antes, e tudo que tem depois é ignorado.
+        2. git log --until='Jan 1 2018' -> Podemos filtrar também até aquele dia que passamos, ou seja, tudo que tem antes, e tudo que tem depois é ignorado.
 
-    3. git log --since='Jan 1 2018' --until='Jan 10 2018' -> Podemos usar esse comando quando queremos um periodo, e ai passamos os dois filtros que temos acima.
+        3. git log --since='Jan 1 2018' --until='Jan 10 2018' -> Podemos usar esse comando quando queremos um periodo, e ai passamos os dois filtros que temos acima.
 
-    4. git log --author="Leonardo" -> Podemos filtrar pelo nome do autor.
+        4. git log --author="Leonardo" -> Podemos filtrar pelo nome do autor.
 
-    5. git shortlog -> Retorna um log simplificado.
+        5. git shortlog -> Retorna um log simplificado.
 
-    6. git shortlog -sn -> Retorna um log mais simples ainda, retorna somente o numero de commite e o autor.
+        6. git shortlog -sn -> Retorna um log mais simples ainda, retorna somente o numero de commite e o autor.
 
-    7. git log -<numero_de_commit> -> Retorna os ultimos commites, de acordo com o valor que passarmos em <numero_de_commit>
+        7. git log -<numero_de_commit> -> Retorna os ultimos commites, de acordo com o valor que passarmos em <numero_de_commit>
 
-    * git reflog -> Trabalha em cima das referências. Vai mais fundo que o git log, mostrando a referência de TODA o histório do git. Retorna os commit, rebase, chery-pick, ou seja, literalmente tudo que fizemos no projeto. MUito poderoso e útil, com ele podemos recuperar coisas que deletamos pelo "git reset --hard". **PODE SALVAR MINHA VIDA RS**
+        * git reflog -> Trabalha em cima das referências. Vai mais fundo que o git log, mostrando a referência de TODA o histório do git. Retorna os commit, rebase, chery-pick, ou seja, literalmente tudo que fizemos no projeto. MUito poderoso e útil, com ele podemos recuperar coisas que deletamos pelo "git reset --hard". **PODE SALVAR MINHA VIDA RS**
 
 ### GIT REVERT
 
