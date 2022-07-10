@@ -33,11 +33,11 @@
 
 ### GIT REVERT
 
-    * **USAR NO MASTER** → git revert <numero_do_hash> → Retorna pro commit que passamos no hash, e ignora todas as alterações que foram feita posteriormente ao commit. Mantém o histórico de commit.
+    * ** USAR NO MASTER ** → git revert <numero_do_hash> → Retorna pro commit que passamos no hash, e ignora todas as alterações que foram feita posteriormente ao commit. Mantém o histórico de commit.
 
-    * **USAR EM BRANCH SEPARADOS** → git reset —hard <numero_do_hash> → Retorna pro commit que passamos no hash, e ignora todas as alterações que foram feita posteriormente ao commit. Não mantém o histórico dos commit.
+    * ** USAR EM BRANCH SEPARADOS ** → git reset —hard <numero_do_hash> → Retorna pro commit que passamos no hash, e ignora todas as alterações que foram feita posteriormente ao commit. Não mantém o histórico dos commit.
 
-    * **USAR EM BRANCH SEPARADOS** → git reset —soft <numero_do_hash> → Retorna pro commit que passamos no hash, porém todas as alterações voltam para o ambiente de stash, e a partir dali decidimos se queremos adicionar ou não as alterações.
+    * ** USAR EM BRANCH SEPARADOS ** → git reset —soft <numero_do_hash> → Retorna pro commit que passamos no hash, porém todas as alterações voltam para o ambiente de stash, e a partir dali decidimos se queremos adicionar ou não as alterações.
 
 ### GIT AMEND
 
